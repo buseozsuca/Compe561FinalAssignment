@@ -1,0 +1,8 @@
+﻿@model MangaListViewModel
+
+<div class="row marginTop">
+    @foreach (var manga in Model.Mangas)
+    {
+        @Html.Partial("MangaSummary", manga)
+    }
+</div>
